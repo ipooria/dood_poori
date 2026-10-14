@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>DOOD POORI | Vape & Hookah Store</title>
+<style>
+:root{--bg:#080808;--panel:#121212;--gold:#d6a847;--gold2:#f4d58a;--text:#f5f1e8;--muted:#b9b3a7;--line:#302719}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#1a160d 0,#080808 42%);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:5;background:#080808eF;border-bottom:1px solid #3b2c12;backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px}.brand img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}
+.controls{display:flex;gap:8px;align-items:center}.btn,button{cursor:pointer;border:1px solid var(--gold);background:var(--gold);color:#100d07;border-radius:9px;padding:10px 14px;font-weight:700}.btn.outline,button.outline{background:transparent;color:var(--gold2)}select,input,textarea{background:#0b0b0b;color:var(--text);border:1px solid #554322;border-radius:8px;padding:11px;width:100%;font:inherit}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:46px 0 38px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.15;margin:0 0 14px}.gold{color:var(--gold2)}.hero p{color:var(--muted);line-height:2;max-width:590px}.hero-logo{width:min(100%,410px);display:block;margin:auto;border-radius:50%;filter:drop-shadow(0 10px 35px #000)}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}.pill{border:1px solid #6c5120;color:var(--gold2);border-radius:99px;padding:8px 12px;font-size:14px}
+section{padding:26px 0 34px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}.section-head h2{margin:0;font-size:28px}.section-head p{color:var(--muted);margin:6px 0 0}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.filters button{background:#15120d;color:var(--gold2)}.filters button.active{background:var(--gold);color:#100d07}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid var(--line);border-radius:15px;overflow:hidden}.product-art{height:150px;display:grid;place-items:center;background:radial-gradient(circle,#2a2112,#0a0a0a 70%);color:var(--gold2);font-size:40px}.card-body{padding:16px}.tag{font-size:12px;color:var(--gold2);border:1px solid #5d461f;border-radius:30px;padding:5px 8px;display:inline-block}.card h3{margin:12px 0 6px}.card p{color:var(--muted);line-height:1.8;font-size:14px;min-height:44px}.card .row{display:flex;gap:8px;margin-top:12px}.card .row button{flex:1}
+.notice{border:1px solid #4d3a18;background:#151108;border-radius:12px;padding:14px;color:#e8d5a8;line-height:1.9;font-size:13px}
+.order-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:20px}.field{margin-bottom:12px}.field label{display:block;margin-bottom:7px;color:var(--muted);font-size:14px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);line-height:2}.footrow{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.small{font-size:12px;color:#8f887b}
+[dir="ltr"] body{text-align:left}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.hero-logo{width:220px;grid-row:1}.grid{grid-template-columns:repeat(2,1fr)}.order-layout{grid-template-columns:1fr}.brand span{font-size:13px}.nav{flex-wrap:wrap}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:440px){.grid{grid-template-columns:1fr}.product-art{height:125px}.two{grid-template-columns:1fr}.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><img src="logo.png" alt="DOOD POORI logo"><span>DOOD POORI</span></a>
+<div class="controls"><select id="language" aria-label="Language"><option value="fa">فارسی</option><option value="en">English</option></select><a class="btn outline" href="#products" data-i18n="browse">مشاهده محصولات</a></div>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<div class="pill" data-i18n="eyebrow">استایل خاص • انتخاب هوشمندانه</div>
+<h1><span data-i18n="hero1">به دنیای</span><br><span class="gold">DOOD POORI</span><br><span data-i18n="hero2">خوش آمدید</span></h1>
+<p data-i18n="intro">محصولات فروشگاه را مرور کنید، دسته‌بندی دلخواهتان را انتخاب کنید و درخواست سفارش خود را ثبت کنید.</p>
+<div class="pills"><span class="pill" data-i18n="cat1">اکسسوری</span><span class="pill" data-i18n="cat2">فندک</span><span class="pill" data-i18n="cat3">لوازم جانبی قلیان</span></div>
+<a class="btn" href="#products" data-i18n="view">دیدن محصولات</a>
+</div>
+<img class="hero-logo" src="logo.png" alt="DOOD POORI">
+</section>
+
+<section id="products">
+<div class="section-head"><div><h2 data-i18n="productsTitle">محصولات فروشگاه</h2><p data-i18n="productsSub">محصولات و قیمت‌ها را از بخش مدیریت ساده‌ی این قالب ویرایش کنید.</p></div></div>
+<div class="filters" id="filters"></div>
+<div class="grid" id="productGrid"></div>
+</section>
+
+<section id="order">
+<div class="section-head"><div><h2 data-i18n="orderTitle">ثبت درخواست سفارش</h2><p data-i18n="orderSub">اطلاعات را وارد کنید و سفارش را از طریق پیام‌رسان ارسال کنید.</p></div></div>
+<div class="order-layout">
+<form class="panel" id="orderForm">
+<div class="field"><label data-i18n="nameLabel" for="customerName">نام</label><input id="customerName" required maxlength="80" autocomplete="name"></div>
+<div class="two">
+<div class="field"><label data-i18n="phoneLabel" for="customerPhone">شماره تماس</label><input id="customerPhone" required maxlength="30" autocomplete="tel"></div>
+<div class="field"><label data-i18n="channelLabel" for="channel">روش تماس</label><select id="channel"><option value="whatsapp">WhatsApp</option><option value="telegram">Telegram</option></select></div>
+</div>
+<div class="field"><label data-i18n="productLabel" for="chosenProduct">محصول</label><select id="chosenProduct" required></select></div>
+<div class="field"><label data-i18n="quantityLabel" for="quantity">تعداد</label><input id="quantity" type="number" min="1" max="99" value="1" required></div>
+<div class="field"><label data-i18n="notesLabel" for="notes">توضیحات (اختیاری)</label><textarea id="notes" rows="3" maxlength="500"></textarea></div>
+<button type="submit" data-i18n="submit">ادامه ثبت سفارش</button>
+<p class="small" data-i18n="privacy">اطلاعات واردشده در این نسخه به پایگاه داده ارسال نمی‌شود؛ با زدن دکمه، متن سفارش برای پیام‌رسان انتخابی آماده می‌شود.</p>
+</form>
+<div class="panel">
+<h3 data-i18n="contactTitle">ارتباط با فروشگاه</h3>
+<p data-i18n="contactText">برای تکمیل این بخش، شناسه یا شماره رسمی فروشگاه را در تنظیمات فایل وارد کنید.</p>
+<div class="field"><label data-i18n="waLabel">شماره واتساپ با کد کشور، فقط ارقام</label><input id="waNumber" placeholder="مثلاً 989123456789"></div>
+<div class="field"><label data-i18n="tgLabel">شناسه تلگرام بدون @</label><input id="tgUser" placeholder="your_shop_username"></div>
+<div class="field"><label data-i18n="igLabel">شناسه اینستاگرام</label><input id="igUser" value="dood_poori"></div>
+<button class="outline" type="button" id="saveSettings" data-i18n="saveSettings">ذخیره در همین مرورگر</button>
+<p class="small" data-i18n="localSave">این تنظیمات فقط در همین مرورگر و همین دستگاه ذخیره می‌شوند.</p>
+</div>
+</div>
+</section>
+<div class="notice" data-i18n="legal">پیش از انتشار، قوانین محل فعالیت، محدودیت سنی و مقررات محصولات را بررسی کنید. این قالب فعلاً کاتالوگ و آماده‌ساز پیام سفارش است؛ پرداخت آنلاین و ذخیره‌سازی مرکزی سفارش‌ها نیازمند اتصال امن به سرویس جداگانه است.</div>
+</main>
+<footer><div class="wrap footrow"><div><strong class="gold">DOOD POORI</strong><br><span data-i18n="footerLine">VAPE & HOOKAH STORE</span><br><span data-i18n="address">خیابان پژمان، نبش پژمان ۱۵</span></div><div><a href="https://www.instagram.com/dood_poori/" target="_blank" rel="noopener">@dood_poori</a><br><span>© DOOD POORI</span></div></div></footer>
+<script>
+const products = [
+ {id:1,cat:"accessories",fa:"اکسسوری نمونه ۱",en:"Accessory Sample 1",descFa:"برای جایگزینی با نام و مشخصات محصول واقعی.",descEn:"Replace with the real product name and details.",price:"",icon:"✦"},
+ {id:2,cat:"lighters",fa:"فندک نمونه ۱",en:"Lighter Sample 1",descFa:"عکس، توضیحات و قیمت محصول را بعداً اضافه کنید.",descEn:"Add the product photo, details and price later.",price:"",icon:"♨"},
+ {id:3,cat:"hookah",fa:"لوازم جانبی قلیان نمونه ۱",en:"Hookah Accessory Sample 1",descFa:"این کارت نمونه است و محصول واقعی نیست.",descEn:"This is a placeholder, not a real product.",price:"",icon:"◇"}
+];
+const dict={
+fa:{browse:"مشاهده محصولات",eyebrow:"استایل خاص • انتخاب هوشمندانه",hero1:"به دنیای",hero2:"خوش آمدید",intro:"محصولات فروشگاه را مرور کنید، دسته‌بندی دلخواهتان را انتخاب کنید و درخواست سفارش خود را ثبت کنید.",cat1:"اکسسوری",cat2:"فندک",cat3:"لوازم جانبی قلیان",view:"دیدن محصولات",productsTitle:"محصولات فروشگاه",productsSub:"محصولات و قیمت‌ها را از بخش مدیریت ساده‌ی این قالب ویرایش کنید.",orderTitle:"ثبت درخواست سفارش",orderSub:"اطلاعات را وارد کنید و سفارش را از طریق پیام‌رسان ارسال کنید.",nameLabel:"نام",phoneLabel:"شماره تماس",channelLabel:"روش تماس",productLabel:"محصول",quantityLabel:"تعداد",notesLabel:"توضیحات (اختیاری)",submit:"ادامه ثبت سفارش",privacy:"اطلاعات واردشده در این نسخه به پایگاه داده ارسال نمی‌شود؛ با زدن دکمه، متن سفارش برای پیام‌رسان انتخابی آماده می‌شود.",contactTitle:"ارتباط با فروشگاه",contactText:"برای تکمیل این بخش، شناسه یا شماره رسمی فروشگاه را در تنظیمات فایل وارد کنید.",waLabel:"شماره واتساپ با کد کشور، فقط ارقام",tgLabel:"شناسه تلگرام بدون @",igLabel:"شناسه اینستاگرام",saveSettings:"ذخیره در همین مرورگر",localSave:"این تنظیمات فقط در همین مرورگر و همین دستگاه ذخیره می‌شوند.",legal:"پیش از انتشار، قوانین محل فعالیت، محدودیت سنی و مقررات محصولات را بررسی کنید. این قالب فعلاً کاتالوگ و آماده‌ساز پیام سفارش است؛ پرداخت آنلاین و ذخیره‌سازی مرکزی سفارش‌ها نیازمند اتصال امن به سرویس جداگانه است.",footerLine:"VAPE & HOOKAH STORE",address:"خیابان پژمان، نبش پژمان ۱۵",all:"همه",orderBtn:"سفارش",details:"مشخصات محصول",noPrice:"برای قیمت تماس بگیرید",choose:"انتخاب محصول",sent:"متن سفارش آماده شد؛ پیام‌رسان را بررسی کنید.",needContact:"لطفاً شماره واتساپ یا شناسه تلگرام را در بخش ارتباط وارد و ذخیره کنید."},
+en:{browse:"Browse products",eyebrow:"Distinct style • Smart choice",hero1:"Welcome to",hero2:"",intro:"Browse the store, choose a category, and submit an order request.",cat1:"Accessories",cat2:"Lighters",cat3:"Hookah accessories",view:"Explore products",productsTitle:"Store products",productsSub:"Replace sample items with your real product names, details, photos and prices.",orderTitle:"Place an order request",orderSub:"Enter your details and prepare the order through your preferred messenger.",nameLabel:"Name",phoneLabel:"Phone number",channelLabel:"Contact method",productLabel:"Product",quantityLabel:"Quantity",notesLabel:"Notes (optional)",submit:"Continue order",privacy:"This starter version does not send data to a database. The button prepares an order message for the selected messenger.",contactTitle:"Contact the store",contactText:"Add the store's official contact details below.",waLabel:"WhatsApp number with country code, digits only",tgLabel:"Telegram username without @",igLabel:"Instagram username",saveSettings:"Save in this browser",localSave:"Settings are saved only in this browser on this device.",legal:"Before publishing, check local laws, age restrictions and product rules. This template is currently a product catalogue and order-message helper; online payment and centralized order storage require a secure external service.",footerLine:"VAPE & HOOKAH STORE",address:"Pezhman Street, corner of Pezhman 15",all:"All",orderBtn:"Order",details:"Product details",noPrice:"Contact for price",choose:"Choose a product",sent:"Order message prepared; check your messenger.",needContact:"Add and save your WhatsApp number or Telegram username first."}
+};
+let lang="fa", filter="all";
+function t(k){return dict[lang][k]||k}
+function render(){
+ document.documentElement.lang=lang;document.documentElement.dir=lang==="fa"?"rtl":"ltr";
+ document.querySelectorAll("[data-i18n]").forEach(el=>{let k=el.dataset.i18n;if(dict[lang][k])el.textContent=dict[lang][k]});
+ const cats=[["all",t("all")],["accessories",t("cat1")],["lighters",t("cat2")],["hookah",t("cat3")]];
+ document.getElementById("filters").innerHTML=cats.map(([id,label])=>`<button class="${filter===id?'active':''}" data-filter="${id}">${label}</button>`).join("");
+ document.querySelectorAll("[data-filter]").forEach(b=>b.onclick=()=>{filter=b.dataset.filter;render()});
+ const list=products.filter(p=>filter==="all"||p.cat===filter);
+ document.getElementById("productGrid").innerHTML=list.map(p=>`<article class="card"><div class="product-art">${p.icon}</div><div class="card-body"><span class="tag">${cats.find(c=>c[0]===p.cat)[1]}</span><h3>${lang==="fa"?p.fa:p.en}</h3><p>${lang==="fa"?p.descFa:p.descEn}</p><div class="small">${p.price||t("noPrice")}</div><div class="row"><button data-pick="${p.id}">${t("orderBtn")}</button></div></div></article>`).join("");
+ document.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{document.getElementById("chosenProduct").value=b.dataset.pick;document.getElementById("order").scrollIntoView({behavior:"smooth"})});
+ document.getElementById("chosenProduct").innerHTML=`<option value="">${t("choose")}</option>`+products.map(p=>`<option value="${p.id}">${lang==="fa"?p.fa:p.en}</option>`).join("");
+}
+document.getElementById("language").onchange=e=>{lang=e.target.value;render()};
+function loadSettings(){let s=JSON.parse(localStorage.getItem("dp-settings")||"{}");waNumber.value=s.wa||"";tgUser.value=s.tg||"";igUser.value=s.ig||"dood_poori"}
+document.getElementById("saveSettings").onclick=()=>{localStorage.setItem("dp-settings",JSON.stringify({wa:waNumber.value.replace(/\D/g,""),tg:tgUser.value.replace(/^@/,"").trim(),ig:igUser.value.replace(/^@/,"").trim()}));alert(lang==="fa"?"تنظیمات در همین مرورگر ذخیره شد.":"Settings saved in this browser.")};
+document.getElementById("orderForm").onsubmit=e=>{
+ e.preventDefault();let s=JSON.parse(localStorage.getItem("dp-settings")||"{}"),id=chosenProduct.value,p=products.find(x=>x.id==id);if(!p)return;
+ const msg=(lang==="fa"?`درخواست سفارش DOOD POORI\nنام: ${customerName.value}\nتماس: ${customerPhone.value}\nمحصول: ${p.fa}\nتعداد: ${quantity.value}\nتوضیحات: ${notes.value||"—"}`:`DOOD POORI order request\nName: ${customerName.value}\nPhone: ${customerPhone.value}\nProduct: ${p.en}\nQuantity: ${quantity.value}\nNotes: ${notes.value||"—"}`);
+ if(channel.value==="whatsapp"){let n=(s.wa||"").replace(/\D/g,"");if(!n){alert(t("needContact"));return}window.open("https://wa.me/"+n+"?text="+encodeURIComponent(msg),"_blank","noopener")}
+ else{let u=(s.tg||"").replace(/^@/,"");if(!u){alert(t("needContact"));return}window.open("https://t.me/"+u+"?text="+encodeURIComponent(msg),"_blank","noopener")}
+ alert(t("sent"));
+};
+loadSettings();render();
+</script>
+</body></html>
